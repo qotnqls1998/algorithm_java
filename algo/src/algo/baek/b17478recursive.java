@@ -1,4 +1,4 @@
-package algo;
+package algo.baek;
 
 import java.util.Scanner;
 

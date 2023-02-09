@@ -1,4 +1,4 @@
-package algo;
+package algo.swea;
 import java.util.Scanner;
 
 public class Swea1210_ladder1 {

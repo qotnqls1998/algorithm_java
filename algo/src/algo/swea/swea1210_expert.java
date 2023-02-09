@@ -1,4 +1,4 @@
-package algo;
+package algo.swea;
 
 public class swea1210_expert {
 	public static void main(String[] args) {
