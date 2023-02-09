@@ -11,6 +11,8 @@ public class b1032 {
 		
 		int n =  Integer.parseInt(br.readLine()); //Int
 		String[] arr = new String[n];
+		//
+		
 		
 //		for(int i=0;i<n;i++) {
 //			String s = br.readLine();
