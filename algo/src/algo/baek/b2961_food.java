@@ -10,6 +10,7 @@ public class b2961_food {
     static boolean[] isSelected;  //각 원소가 부분집합의 구성에 포함되는지 여부
     static int n;
     static int min=100000000;
+    
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -38,6 +39,7 @@ public class b2961_food {
         	int tmp1 = 1;
 			int tmp2 = 0;
 			
+			//for문으로 현재 true 인값 다 곱하거나 더하기 
             for (int i = 0; i < n; i++) {	
             	
             	if(isSelected[i]) {
@@ -46,8 +48,7 @@ public class b2961_food {
         				
         			tmp1 = sin_sum[i];
         			tmp2 = ssun_sum[i];
-        				
-            		//for문으로 현재 true 인값 다 곱하거나 더하기 
+        		
             		int tmp = Math.abs(sin_sum[i]-ssun_sum[i]);
       
             		if(tmp  < min)
