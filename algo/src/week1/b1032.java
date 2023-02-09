@@ -17,6 +17,8 @@ public class b1032 {
 			String s = br.readLine();
 			for(int j=0;j<s.length();j++)
 				
+				
+				
 		}
 	
 		
