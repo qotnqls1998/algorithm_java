@@ -41,8 +41,20 @@ public class b2961_food {
 			
 			//for문으로 현재 true 인값 다 곱하거나 더하기 
             for (int i = 0; i < n; i++) {	
-            	
+            	/*
             	if(isSelected[i]) {
+            		sin_sum[i]=tmp1*sin[i]; //tmp는 직전의 값 !! 바뀌기 전의 값 ... 
+        			ssun_sum[i]=tmp2+ssun[i];
+        				
+        			tmp1 = sin_sum[i];
+        			tmp2 = ssun_sum[i];
+        		
+            		int tmp = Math.abs(sin_sum[i]-ssun_sum[i]);
+      
+            		if(tmp  < min)
+            			min = tmp;	
+            	}*/
+             	if(isSelected[i]) {
             		sin_sum[i]=tmp1*sin[i]; //tmp는 직전의 값 !! 바뀌기 전의 값 ... 
         			ssun_sum[i]=tmp2+ssun[i];
         				
