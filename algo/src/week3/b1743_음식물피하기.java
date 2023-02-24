@@ -64,4 +64,6 @@ public class b1743_음식물피하기 {
 		return result;
 		
 	}
+	
+	
 }
