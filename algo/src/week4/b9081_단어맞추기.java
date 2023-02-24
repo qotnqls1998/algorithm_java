@@ -8,7 +8,6 @@ import java.util.*;
 public class b9081_단어맞추기 {
 
 	static char[] output;
-	static List<String> arr;
 	static StringBuilder sb ;
 	static int size;
 	public static void main(String[] args) throws NumberFormatException, IOException {
@@ -17,7 +16,7 @@ public class b9081_단어맞추기 {
 		
 		for(int i=0;i<tc;i++) {
 			sb = new StringBuilder();
-			arr = new ArrayList<>();
+			
 			String s = br.readLine();
 			
 			size =s.length();
@@ -27,45 +26,34 @@ public class b9081_단어맞추기 {
 				output[j]=s.charAt(j);
 			}
 			
-			
-			while(next_perm(output)) {
-				sb = new StringBuilder();
-				
-				for(int k=0;k<size;k++)
-					sb.append(output[k]);
-				
-				arr.add(sb.toString());
-			}
-			
-			Collections.sort(arr);
-			
-			System.out.println(arr.get( (arr.indexOf(s)+1) ));
-			}
+			next_perm(output);
+	
+		}
 	}
 	
-	static boolean next_perm(char[] output) {
-		//System.out.println("실행");
+	static void next_perm(char[] output) {
+		//현재 단어에서 다음 순서의 단어
 		
-		int i = output.length-1;
+		//현재 글자
+		int i = size-1;
+		while (i > 0 && output[i - 1] >= output[i]) i--;
 		
-		while (i > 0 && output[i - 1] >= output[i]) {
-			i--;
+		if(i==0) {//다음순서가 없음을 의미 
+			System.out.println(output);
+			return;
 		}
 		
-		if(i==0) return false;
-		
-		
 		int j=size-1;
-		while(output[i-1] > output[j]) j--;
+		while(output[i-1] >= output[j]) j--;
 		
 		swap(output,i-1,j);
 		
 		int k = size - 1;
 		while(i < k) {
-				swap(output, i++, k--);	
-				
+				swap(output, i++, k--);		
 		}
-		return true;
+		
+		System.out.println(output);
 	}
 	
 	static void swap(char numbers[], int i, int j) {
