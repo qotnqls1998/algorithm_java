@@ -16,7 +16,9 @@ public class b14499_주사위 {
 		//서 -> 동
 		for(int i=0;i<N;i++) {
 			//북 -> 남
-			
+			for(int j=0;j<2;j++) {
+				
+			}
 		}
 	}
 }
