@@ -21,7 +21,7 @@ class Solution {
     }
     private void dfs(int dep, int sum){
         
-        //5개 다봤으면 꺼져
+        //5개 다봤으면 돌아가
         if(dep==arr.length){
            if(number == sum) answer++;
         }
