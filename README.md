@@ -1,3 +1,3 @@
-# algorithm_java
+# Algorithm
 
-Problem solving with JAVA
+Problem solving with JAVA & cpp
